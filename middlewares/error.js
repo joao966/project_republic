@@ -1,12 +1,13 @@
 module.exports = (err, _req, res, _next) => {
+
   if (err.isJoi) {
     return res.status(422).json({
-      error: { message: err.details[0].message },
+      error: err.message,
     });
   }
 
-  if (err.statusCode) {
-    return res.status(err.statusCode).json({
+  if (err.isError) {
+    return res.status(422).json({
       error: { message: err.message },
     });
   }
