@@ -10,14 +10,6 @@ const middlewares = require('./middlewares');
 
 const app = express();
 
-app.use(
-  cors({
-    origin: `http://localhost:${PORT}`,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Authorization'],
-  }),
-);
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

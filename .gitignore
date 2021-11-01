@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+node_modules
+=======
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,linux,windows,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,windows,vscode
@@ -179,3 +182,4 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,windows,vscode
 n
+>>>>>>> 4c2120988007bbdfeaf427270d36dfc6d2f25f02
