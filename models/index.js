@@ -1,4 +1,4 @@
-const { getUserByEmail, createUser, getAll, getUser } = require('./user');
+const { getUserByEmail, createUser, getAll } = require('./user');
 const { getPassword, createLogin, getByEmail } = require('./login');
 
 module.exports = {
@@ -8,5 +8,4 @@ module.exports = {
   createLogin,
   getPassword,
   getAll,
-  getUser,
 };
