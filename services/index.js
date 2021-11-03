@@ -1,8 +1,11 @@
-const {validadeCreate} = require('./user');
-const { createServiceLogin,getByEmail } = require('./login');
+const { validadeCreate, getAll, getUserByEmail, getUser } = require('./user');
+const { createServiceLogin, getByEmail } = require('./login');
 
-module.exports ={
+module.exports = {
   validadeCreate,
   getByEmail,
   createServiceLogin,
+  getAll,
+  getUserByEmail,
+  getUser,
 };

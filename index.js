@@ -10,23 +10,21 @@ const middlewares = require('./middlewares');
 
 const app = express();
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
+app.use((_req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
   app.use(cors());
-  next()
-})
+  next();
+});
 
 app.use(
   cors({
-    origin: "*",
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
+    credentials: true,
   }),
 );
 
-app.get('/', (_req, res) => {
-  return res.status(200).json({message: "Welcome"})
-})
+app.get('/', (_req, res) => res.status(200).json({ message: 'Welcome' }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
