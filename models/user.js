@@ -20,15 +20,14 @@ const getAll = async () => {
   return result; 
 };
 
-const getUser = async (name) => {
-  const db = await connect();
-  const result = await db.collection('users').findOne({ name });
-  return result;
-};
+// const getUser = async (email) => {
+//   const db = await connect();
+//   const result = await db.collection('users').findOne({ email });
+//   return result;
+// };
 
 module.exports = {
   getUserByEmail,
   createUser,
   getAll,
-  getUser,
 };
