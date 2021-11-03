@@ -14,13 +14,12 @@ const createUser = async (name, email, password) => {
   return { role: result.ops[0].role, id: result.insertedId };
 };
 
-
-// feature a implementar
 const getAll = async () => {
   const db = await connect();
   const result = await db.collection('users').find().toArray();
   return result; 
 };
+
 const getUser = async (name) => {
   const db = await connect();
   const result = await db.collection('users').findOne({ name });
@@ -30,4 +29,6 @@ const getUser = async (name) => {
 module.exports = {
   getUserByEmail,
   createUser,
+  getAll,
+  getUser,
 };

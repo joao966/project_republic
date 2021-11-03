@@ -1,4 +1,4 @@
-const { getUserByEmail, createUser } = require('../models');
+const { getUserByEmail, createUser, getAll, getUser } = require('../models');
 
 const { errorBusiness } = require('../helpers/errors');
 
@@ -19,4 +19,4 @@ const validadeCreate = async (name, email, password) => {
   return userCreated;
 };
 
-module.exports = { validadeCreate };
+module.exports = { validadeCreate, getAll, getUserByEmail, getUser };

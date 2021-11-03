@@ -1,9 +1,8 @@
 const jwt = require('jsonwebtoken');
 
-const {JWT_SECRET} = process.env;
+const { JWT_SECRET } = process.env;
 
 const { createServiceLogin, getByEmail } = require('../services');
-
 
 const postLogin = async (req, res, next) => {
   const { email, password } = req.body;

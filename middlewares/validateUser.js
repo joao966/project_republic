@@ -12,10 +12,12 @@ const validateUser = (req, _res, next) => {
 .required(),
   }).validate(req.body);
   
-  if (error) return next({
+  if (error) {
+ return next({
     isJoi: true,
     message: error.details[0].message,
-  });
+  }); 
+}
 
   next();
 };
