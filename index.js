@@ -18,9 +18,9 @@ app.use((_req, res, next) => {
 
 app.use(
   cors({
-    origin: '*',
+    origin: `http://localhost:${PORT}`,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
+    allowedHeaders: ['Authorization'],
   }),
 );
 
@@ -31,6 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/user', router.routerUser);
 app.use('/login', router.routerLogin);
+app.use('/history', router.routerHistory);
 
 app.use(middlewares.error);
 
