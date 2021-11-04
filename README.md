@@ -19,7 +19,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * JOI
 
 
-##LINK'S
+## LINK'S
 
 - LINK HEROKU: https://project-republic.herokuapp.com/
 
