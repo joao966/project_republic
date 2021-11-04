@@ -18,8 +18,9 @@ app.use((_req, res, next) => {
 
 app.use(
   cors({
-    origin: `http://localhost:${PORT}`,
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
   }),
 );
 
