@@ -20,7 +20,6 @@ app.use(
   cors({
     origin: `http://localhost:${PORT}`,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Authorization'],
   }),
 );
 
