@@ -8,7 +8,6 @@ const postLogin = async (req, res, next) => {
   const { email, password } = req.body;
 
   const result = await createServiceLogin(email, password);
-  console.log(result.message);
 
   if (result.isError) {
     return next(result);

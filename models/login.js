@@ -6,9 +6,10 @@ const getByEmail = async (email) => {
   return result;
 };
 
-const getPassword = async (password, email) => {
+const getPassword = async (password) => {
   const db = await connect();
-  const result = await db.collection('users').findOne({ password, email });
+  const result = await db.collection('users').findOne({ password });
+  console.log(result);
   return result;
 };
 
