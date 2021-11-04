@@ -1,6 +1,6 @@
 ## 💻 Sobre o projeto
 
-API CRIADO COM OBJETIVO DE ATENDER AO FRONT-END  DO PROJETO PROMETEU TINTAS. A API POSSUI TRÊS END-POINTS COM VALIDAÇÕES.
+API CRIADA COM OBJETIVO DE ATENDER AO FRONT-END  DO PROJETO PROMETEU TINTAS. A API POSSUI TRÊS END-POINTS COM VALIDAÇÕES.
 
 Os usuários terão acesso Desktop e Mobile, onde poderão:
 
@@ -19,6 +19,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * JOI
 
 LINK HEROKU: https://project-republic.herokuapp.com/
+LINK DEPLOY FRONTEND: https://project-republic-front.herokuapp.com/ 
 
 
 ## 🚀 Como executar o projeto
