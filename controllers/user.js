@@ -22,9 +22,9 @@ const posNewUser = async (req, res, next) => {
 
 const getByName = async (req, res) => {
   const { q } = req.query;
-  console.log(q);
   const result = await service.getUserByEmail(q);
-  return res.status(200).json(result);
+  const { password, ...rest } = result;
+  return res.status(200).json(rest);
 };
 
 module.exports = {
