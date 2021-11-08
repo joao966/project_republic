@@ -3,7 +3,7 @@ const connect = require('./connection');
 
 const createHistory = async (liters, maters, user) => {
   const db = await connect();
-  const result = await db.collection('users')
+  const result = await db.collection('history')
     .insertOne({ liters, maters, user });
   return result;
 };
